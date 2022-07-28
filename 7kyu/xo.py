@@ -31,5 +31,15 @@ def XO(s):
 
 doctest.testmod(verbose=False)
 
+def is_prime(num):
+    for i in range(2, num):
+        if num%i == 0: 
+            return False
+    if num < 0 or num == 1 or num == 0:
+        return False
+    return True
+
+
+print(is_prime(0))
 
 
